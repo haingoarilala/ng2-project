@@ -6,3 +6,6 @@ body{
 .navbar-light .navbar-nav .nav-link {
     color: #5cb85c;
 }
+navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color:#fff;
+}
