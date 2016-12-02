@@ -1,0 +1,22 @@
+<div class="wrap">
+  <form #formData='ngForm' class="login-form center-block" (ngSubmit)="onSubmit(formData)">
+      <h2 class="form-header">Identifiez-vous</h2>
+			<hr class="colorbar"><br>  <!-- colorbar -->
+      <div class="form-group">
+        <input type="text" id="email" name="email" class="form-control input-lg" placeholder="Email" (ngModel)="email" requred>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control input-lg" placeholder="Password" id="password" name="password" (ngModel)="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="!formData.valid">Se connecter</button>
+        <span class="pull-md-right"><a href="#">Register</a></span>
+      <span class="pull-md-left"><a href="#">Need help?</a></span>
+      </div>
+  </form>
+</div>
+
+<div class="alert alert-danger alert-dismissible fade in" role="alert" *ngIf="error">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+{{ error }}
+</div>
