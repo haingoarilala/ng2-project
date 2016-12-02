@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFire } from 'angularfire2';
+import * as firebase from 'firebase';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

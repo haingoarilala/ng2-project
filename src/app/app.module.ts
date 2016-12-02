@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routes';
+import * as firebase from 'firebase';
 import { 
   AngularFireModule,
   FIREBASE_PROVIDERS,
