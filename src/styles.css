@@ -9,4 +9,9 @@ body{
 navbar-light .navbar-brand, .navbar-light .navbar-toggler {
     color:#fff;
 }
-.modal-footer {   border-top: 0px; }
+.text-center{
+    display:block;
+    margin: 200px auto;
+    width:200px;
+    height:200px;
+}
