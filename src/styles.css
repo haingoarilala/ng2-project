@@ -9,3 +9,4 @@ body{
 navbar-light .navbar-brand, .navbar-light .navbar-toggler {
     color:#fff;
 }
+.modal-footer {   border-top: 0px; }
