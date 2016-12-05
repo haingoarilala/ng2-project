@@ -1,24 +1,48 @@
-<div class="container-fluid">	
+<div class="container-fluid">
 	<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
 		<!-- Brand -->
-		<a class="navbar-brand" href="#">Monjy HaingoArilala <i class="fa fa-window-restore" aria-hidden="true"></i></a>
+		<a class="navbar-brand" href="#"> <i class="fa fa-window-restore" aria-hidden="true"></i> Monjy HaingoArilala </a>
 		<!-- Links -->
-		<!--
-		<ul class="nav navbar-nav pull-md-right">
-			<li class="nav-item">
-			<a class="nav-link" href="#">Link 1</a>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link" href="#">Link 2</a>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link" href="#">Link 3</a>
-			</li>
+		
+		<ul class="nav navbar-nav" *ngIf="user">
+				<li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+				
 		</ul>
-		-->
-	</nav>
-	
+		<ul class="nav navbar-nav pull-right" *ngIf="user">
+			<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#" (click)="logout()">logout</a>
+                        <a class="dropdown-item" href="#">Pontificate</a>
+                        <a class="dropdown-item" href="#">Synergize</a>
+                    </div>
+                </li>
+		</ul>
+	</nav>	
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="container">
 <router-outlet></router-outlet>

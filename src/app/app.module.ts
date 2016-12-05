@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HoverDirective } from './directive/hover.directive';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 export const firebaseConfig = {
  apiKey: "AIzaSyDj1aEiZxQ_sqpBWLQrV9Cdy-axljPkfkw",
@@ -33,7 +34,8 @@ export const firebaseAuthConfig = {
     AppComponent,
     HomeComponent,
     HoverDirective,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
